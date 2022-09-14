@@ -205,7 +205,7 @@ function moveUp(){
 
 function moveDown(){
   console.log('Moviendose hacía abajo');
-  if((playerPosition.y + elementsSize) > canvasSize){
+  if(Math.floor((playerPosition.y + elementsSize)) > Math.floor(canvasSize)){
     console.log('OUT')
   }else{
     playerPosition.y += elementsSize;
